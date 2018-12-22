@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 2px dotted black;
+  border-radius: 50%;
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.strelka {
+  width: 50px;
+  height: 2px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 20px;
+  position: absolute;
+  top: 48px;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  animation: test 10s linear 1s 1;
+  /* visibility: hidden; */
+}
+
+.test {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.o1 {
+  top: calc(50vh - 162px);
+  left: calc(50vw + 33px);
+  animation: red 6.6s linear 4.3s 1;
+}
+
+.o2 {
+  top: calc(50vh - 158px);
+  left: calc(50vw + 56px);
+  animation: red 5.8s linear 5.1s 1;
+}
+
+.o3 {
+  top: calc(50vh - 145px);
+  left: calc(50vw + 65px);
+  animation: red 4.9s linear 6s 1;
+}
+
+.o4 {
+  top: calc(50vh - 134px);
+  left: calc(50vw + 57px);
+  animation: red 4.1s linear 6.8s 1;
+}
+
+.o5 {
+  top: calc(50vh - 127px);
+  left: calc(50vw + 34px);
+  animation: red 3.3s linear 7.6s 1;
+}
+
+.o6 {
+  top: calc(50vh - 137px);
+  left: calc(50vw + 0px);
+  animation: red 2.4s linear 8.5s 1;
+}
+
+.o7 {
+  top: calc(50vh - 167px);
+  left: calc(50vw - 34px);
+  animation: red 1.6s linear 9.3s 1;
+}
+
+.o8 {
+  top: calc(50vh - 212px);
+  left: calc(50vw - 59px);
+  animation: red 0.8s linear 10.1s 1;
+}
+
+.o9 {
+  top: calc(50vh - 265px);
+  left: calc(50vw - 65px);
+  animation: red 10.1s linear 1s 1;
+  /*  animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.o10 {
+  top: calc(50vh - 318px);
+  left: calc(50vw - 57px);
+  animation: red 9.2s ease-out 1.8s 1;
+}
+
+.o11 {
+  top: calc(50vh - 361px);
+  left: calc(50vw - 33px);
+  animation: red 8.4s linear 2.6s 1;
+}
+
+.o12 {
+  top: calc(50vh - 390px);
+  left: calc(50vw + 0px);
+  animation: red 7.5s linear 3.5s 1;
+}
+
+@keyframes red {
+  0% {
+    background-color: red;
+  }
+  99.9% {
+    background-color: red;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+@keyframes test {
+  from {
+    transform: rotate(0deg);
+    /* visibility: visible; */
+  }
+  to {
+    transform: rotate(360deg);
+    /* visibility: visible; */
+  }
+}
